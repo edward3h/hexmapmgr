@@ -1,0 +1,23 @@
+micronaut:
+  application:
+    name: hexmapmgr
+  security:
+    authentication: bearer
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: '"${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}"'
+datasources:
+  default:
+    url: jdbc:mariadb://localhost:3306/db
+    driverClassName: org.mariadb.jdbc.Driver
+    username: root
+    password: ''
+    schema-generate: CREATE_DROP
+    dialect: MYSQL
+netty:
+  default:
+    allocator:
+      max-order: 3

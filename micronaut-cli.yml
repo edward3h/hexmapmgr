@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: org.ethelred.hexmapmgr
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, data, data-jdbc, gradle, http-client, java, java-application, jdbc-hikari, junit, liquibase, logback, mariadb, micronaut-aot, micronaut-build, netty-server, readme, security-annotations, security-jwt, serialization-jackson, shade, testcontainers, yaml]
